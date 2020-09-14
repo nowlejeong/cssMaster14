@@ -1,0 +1,240 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  text-transform: uppercase;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  height: 5vh;
+  background-color: #bdbec0;
+  display: flex;
+}
+header ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header ul li {
+  margin-left: 10px;
+  border: 1px solid #9b9ca0;
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+}
+header div {
+  width: 500px;
+  height: 60%;
+  margin: 0 auto;
+  -ms-grid-row-align: center;
+  align-self: center;
+  border-radius: 7px;
+  border: 1px solid #9b9ca0;
+}
+main {
+  height: 95vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [4];
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr) [3];
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #bc8f8f;
+  grid-template-areas: "black purple list1 list2" "red white list1 list2" "red yellow list1 list2";
+}
+main .black {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  color: #fff;
+  font-size: 32px;
+  background-color: #000;
+  grid-area: black;
+}
+main .black ul {
+  width: 150px;
+  margin: 10px;
+}
+main .black ul div {
+  display: flex;
+  justify-content: space-between;
+}
+main .purple {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  background-color: purple;
+  grid-area: purple;
+}
+main .red {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  background-color: red;
+  grid-area: red;
+}
+main .red ul {
+  line-height: 36px;
+  margin: 10px;
+}
+main .white,
+main .yellow {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  background-color: #fff;
+  grid-area: white;
+}
+main .yellow {
+  -ms-grid-row: 3;
+  background-color: #ff0;
+  grid-area: yellow;
+}
+main .yellow h2 {
+  font-size: 28px;
+  margin: 10px;
+}
+main .list1,
+main .list2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  background-color: #fff;
+  grid-area: list1;
+  padding: 10px;
+}
+main .list2 {
+  -ms-grid-column: 4;
+  grid-area: list2;
+}
+main .list1 h3,
+main .list2 h3 {
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+main .list1 ul,
+main .list2 ul,
+main .red ul {
+  font-size: 28px;
+}
